@@ -1,10 +1,9 @@
 import readlineSync from 'readline-sync';
 
-function greeting () {
+function greeting() {
+  const userName = readlineSync.question('May I have your name? ');
+  return (`Hello ${userName}!`);
+}
 
-    let  userName = readlineSync.question('May I have your name? ');
-    return('Hello ' + userName + '!');
-};
-
-
-export  {greeting};
+// eslint-disable-next-line import/prefer-default-export
+export { greeting };

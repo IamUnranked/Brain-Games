@@ -24,14 +24,13 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-const numberOne = random(1, 10);
-const numberTwo = random(1, 10);
-const operator = ['+', '-', '*'];
-const operators = operator[random(0, operator.length - 1)];
-
 const game = () => {
-  const questionGame = `Question: ${numberOne} ${operators} ${numberTwo}`;
-  const gameCorrectAnswer = calculator(numberOne, numberTwo, operator).toString();
+  const numberOne = random(1, 10);
+  const numberTwo = random(1, 10);
+  const operator = ['+', '-', '*'];
+  const operators = operator[random(0, operator.length - 1)];
+  const questionGame = `${numberOne} ${operators} ${numberTwo}`;
+  const gameCorrectAnswer = calculator(numberOne, numberTwo, operators).toString();
 
   return [questionGame, gameCorrectAnswer];
 };

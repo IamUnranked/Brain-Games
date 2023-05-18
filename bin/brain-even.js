@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 // eslint-disable-next-line import/no-unresolved
-import gameEven from '../src/even.js';
+import even from '../games/even.js';
 
-console.log(gameEven());
+console.log(even());

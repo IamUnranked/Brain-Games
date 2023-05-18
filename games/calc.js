@@ -1,4 +1,5 @@
 import gameBase from '../src/index.js';
+import random from '../src/utils.js';
 
 const description = 'What is the result of the expression?';
 
@@ -19,10 +20,6 @@ const calculator = (firstValue, secondValue, operator) => {
   }
   return result;
 };
-
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 const game = () => {
   const numberOne = random(1, 10);

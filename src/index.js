@@ -18,10 +18,11 @@ const gameBase = (description, game) => {
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
       console.log('Try again!');
-      break;
+      return;
     }
+
+    console.log(`Congratulations, ${userName}!`);
   }
-  console.log(`Congratulations, ${userName}!`);
 };
 
 export default gameBase;

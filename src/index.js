@@ -16,8 +16,7 @@ const gameBase = (description, game) => {
     if (correctAnswer === answer) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
-      console.log('Try again!');
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}}\nLet's try again, ${userName}!`);
       return;
     }
 

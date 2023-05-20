@@ -6,4 +6,4 @@ function greeting() {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export { greeting };
+export default greeting;

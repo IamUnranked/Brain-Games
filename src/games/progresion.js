@@ -1,5 +1,5 @@
-import gameBase from '../src/index.js';
-import random from '../src/utils.js';
+import gameBase from '../index.js';
+import random from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 

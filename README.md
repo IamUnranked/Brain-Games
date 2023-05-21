@@ -35,8 +35,8 @@ Brain-prime - Простое ли число?
 
 4. Запусти выбранную игру с помощью команд:
 
-&emsp; **brain-even**
-&emsp; **brain-calc**
-&emsp; **brain-gcd**
-&emsp; **brain-progression**
-&emsp; **brain-prime**
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime

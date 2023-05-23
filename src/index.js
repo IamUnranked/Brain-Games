@@ -14,17 +14,14 @@ const runGame = (description, game) => {
     const correctAnswer = getTask[1];
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-
-    if (correctAnswer === answer) {
-      console.log('Correct!');
-    } else {
+    if (correctAnswer !== answer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}}
-      \nLet's try again, ${userName}!`);
+        \nLet's try again, ${userName}!`);
       return;
     }
-
-    console.log(`Congratulations, ${userName}!`);
+    console.log('Correct!');
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;

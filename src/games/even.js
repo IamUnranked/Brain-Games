@@ -1,10 +1,10 @@
-import gameBase from '../index.js';
-import random from '../utils.js';
+import runGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const game = () => {
-  const number = random(1, 10);
+  const number = getRandomNumber(1, 10);
   const questionGame = `${number}`;
   let gameCorrectAnswer = '';
   if (number % 2 === 0) {
@@ -15,6 +15,6 @@ const game = () => {
   return [questionGame, gameCorrectAnswer];
 };
 
-const even = () => gameBase(description, game);
+const runEven = () => runGame(description, game);
 
-export default even;
+export default runEven;

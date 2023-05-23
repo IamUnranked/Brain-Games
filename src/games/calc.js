@@ -1,5 +1,5 @@
-import gameBase from '../index.js';
-import random from '../utils.js';
+import runGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
 
@@ -22,16 +22,16 @@ const calculator = (firstValue, secondValue, operator) => {
 };
 
 const game = () => {
-  const numberOne = random(1, 10);
-  const numberTwo = random(1, 10);
+  const numberOne = getRandomNumber(1, 10);
+  const numberTwo = getRandomNumber(1, 10);
   const operator = ['+', '-', '*'];
-  const operators = operator[random(0, operator.length - 1)];
+  const operators = operator[getRandomNumber(0, operator.length - 1)];
   const questionGame = `${numberOne} ${operators} ${numberTwo}`;
   const gameCorrectAnswer = calculator(numberOne, numberTwo, operators).toString();
 
   return [questionGame, gameCorrectAnswer];
 };
 
-const calc = () => gameBase(description, game);
+const runCalc = () => runGame(description, game);
 
-export default calc;
+export default runCalc;

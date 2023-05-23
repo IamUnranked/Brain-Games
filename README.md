@@ -17,6 +17,7 @@ It's five mini mathematical games for upgrade your brain.
 
 
 4. Launch the selected game using the commands:
+  
   **brain-even**
 
   **brain-calc**

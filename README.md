@@ -4,23 +4,25 @@
 
 # Brain Games. #
 
-It's five mini-games for upgrade you brain.
+It's five mini mathematical games for upgrade your brain.
 
  ## Download. ##
-1. Установите глобально Node.js последней версии в систему.
-Download global Node.js version 13.2.0 and latest in your system.
+1. Download global Node.js version 13.2.0 and further in your system.
 
-2. Склонируйте созданный репозиторий проекта локально.
-Clone the created project repository locally.
 
-3. Выполните установку с помощью команд make install и npm link.
-Perform the installation using the commands **make install** and **npm link**
+2. Clone the created project repository locally.
 
-4. Запусти выбранную игру с помощью команд:
-Launch the selected game using the commands:
 
+3. Install using the commands **make install** and **npm link**
+
+
+4. Launch the selected game using the commands:
 **brain-even**
+
 **brain-calc**
+
 **brain-gcd**
+
 **brain-progression**
+
 **brain-prime**

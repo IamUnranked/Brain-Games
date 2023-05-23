@@ -6,6 +6,10 @@
 
 It's five mini mathematical games for upgrade your brain.
 
+## Minimum system requirements: ##
+
+Node.js version 13.2.0 and further, Terminal. 
+
  ## Download. ##
  1. Download global Node.js version 13.2.0 and further in your system.
 
@@ -13,7 +17,15 @@ It's five mini mathematical games for upgrade your brain.
 2. Clone the created project repository locally.
 
 
-3. Install using the commands **make install** and **npm link**
+3. Install using the commands:
+   
+   ```bash
+    make install
+    ```
+    And 
+    ```bash
+    npm link
+    ```
 
 
 4. Launch the selected game using the commands:

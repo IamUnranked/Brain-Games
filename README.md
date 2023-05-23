@@ -30,12 +30,11 @@ Node.js version 13.2.0 and further, Terminal.
 
 4. Launch the selected game using the commands:
   
-      **brain-even**
+  <ul>
+  <li><p><a href="https://asciinema.org/a/586768">brain-even</a></p></li>
+  <li><p><a href="https://asciinema.org/a/st81vPoQnZmvkLPl10uDtTiwu">brain-calc</a></p></li>
+  <li><p><a href="https://asciinema.org/a/586767">brain-gcd</a></p></li>
+  <li><p><a href="https://asciinema.org/a/586768">brain-progression</a></p></li>
+  <li><p><a href="https://asciinema.org/a/586770">brain-prime</a></p></li>
+</ul>
 
-      **brain-calc**
-
-      **brain-gcd**
-
-      **brain-progression**
-
-      **brain-prime**

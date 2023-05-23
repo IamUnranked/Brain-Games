@@ -7,7 +7,7 @@
 It's five mini mathematical games for upgrade your brain.
 
  ## Download. ##
-1. Download global Node.js version 13.2.0 and further in your system.
+ 1. Download global Node.js version 13.2.0 and further in your system.
 
 
 2. Clone the created project repository locally.
@@ -18,12 +18,12 @@ It's five mini mathematical games for upgrade your brain.
 
 4. Launch the selected game using the commands:
   
-  **brain-even**
+      **brain-even**
 
-  **brain-calc**
+      **brain-calc**
 
-  **brain-gcd**
+      **brain-gcd**
 
-  **brain-progression**
+      **brain-progression**
 
-  **brain-prime**
+      **brain-prime**

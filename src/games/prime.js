@@ -10,7 +10,7 @@ const isPrime = (number) => {
     }
   }
   return true;
-}
+};
 
 const game = () => {
   const number = getRandomNumber(1, 10);

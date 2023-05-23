@@ -17,12 +17,12 @@ It's five mini mathematical games for upgrade your brain.
 
 
 4. Launch the selected game using the commands:
-**brain-even**
+  **brain-even**
 
-**brain-calc**
+  **brain-calc**
 
-**brain-gcd**
+  **brain-gcd**
 
-**brain-progression**
+  **brain-progression**
 
-**brain-prime**
+  **brain-prime**

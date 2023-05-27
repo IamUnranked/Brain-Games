@@ -3,24 +3,24 @@ import getRandomNumber from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const game = () => {
-  let numberOne = getRandomNumber(1, 10);
-  let numberTwo = getRandomNumber(1, 10);
-  const question = `${numberOne} ${numberTwo}`;
+const getTask = () => {
+  let number1 = getRandomNumber(1, 10);
+  let number2 = getRandomNumber(1, 10);
+  const gameQuestion = `${number1} ${number2}`;
   const gameCorrectAnswer = [];
 
-  while (numberOne !== 0 && numberTwo !== 0) {
-    if (numberOne > numberTwo) {
-      numberOne %= numberTwo;
+  while (number1 !== 0 && number2 !== 0) {
+    if (number1 > number2) {
+      number1 %= number2;
     } else {
-      numberTwo %= numberOne;
+      number2 %= number1;
     }
   }
-  gameCorrectAnswer.push(`${numberOne + numberTwo}`);
+  gameCorrectAnswer.push(`${number1 + number2}`);
   const temp = gameCorrectAnswer.join('');
-  return [question, temp];
+  return [gameQuestion, temp];
 };
 
-const runGcd = () => runGame(description, game);
+const runGcd = () => runGame(description, getTask);
 
 export default runGcd;

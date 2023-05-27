@@ -3,35 +3,32 @@ import getRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
 
-const calculator = (firstValue, secondValue, operator) => {
-  let result = null;
+const operators = ['+', '-', '*'];
 
+// eslint-disable-next-line consistent-return
+const calculate = (x, y, operator) => {
   switch (operator) {
     case '+':
-      result = firstValue + secondValue;
-      break;
+      return x + y;
     case '-':
-      result = firstValue - secondValue;
-      break;
+      return x - y;
     case '*':
-      result = firstValue * secondValue;
-      break;
+      return x * y;
     default:
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
-  return result;
 };
 
-const game = () => {
-  const numberOne = getRandomNumber(1, 10);
-  const numberTwo = getRandomNumber(1, 10);
-  const operator = ['+', '-', '*'];
-  const operators = operator[getRandomNumber(0, operator.length - 1)];
-  const questionGame = `${numberOne} ${operators} ${numberTwo}`;
-  const gameCorrectAnswer = calculator(numberOne, numberTwo, operators).toString();
+const getTask = () => {
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
+  const operator = operators[getRandomNumber(0, 2)];
+  const gameQuestion = `${number1} ${operator} ${number2}`;
+  const correctAnswer = calculate(number1, number2, operator).toString();
 
-  return [questionGame, gameCorrectAnswer];
+  return [gameQuestion, correctAnswer];
 };
 
-const runCalc = () => runGame(description, game);
+const runCalc = () => runGame(description, getTask);
 
 export default runCalc;

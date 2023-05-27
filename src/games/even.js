@@ -3,18 +3,18 @@ import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const game = () => {
+const getTask = () => {
   const number = getRandomNumber(1, 10);
-  const questionGame = `${number}`;
-  let gameCorrectAnswer = '';
+  const gameQuestion = `${number}`;
+  let correctAnswer = '';
   if (number % 2 === 0) {
-    gameCorrectAnswer = 'yes';
+    correctAnswer = 'yes';
   } else {
-    gameCorrectAnswer = 'no';
+    correctAnswer = 'no';
   }
-  return [questionGame, gameCorrectAnswer];
+  return [gameQuestion, correctAnswer];
 };
 
-const runEven = () => runGame(description, game);
+const runEven = () => runGame(description, getTask);
 
 export default runEven;

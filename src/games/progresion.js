@@ -3,7 +3,7 @@ import getRandomNumber from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 
-const game = () => {
+const getTask = () => {
   const start = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 5);
   const length = getRandomNumber(5, 20);
@@ -13,11 +13,11 @@ const game = () => {
     result.push(start + i * step);
   }
   const randomReplace = result[getRandomNumber(1, result.length - 1)];
-  const question = result.join(' ').replace(randomReplace, '..');
+  const gameQuestion = result.join(' ').replace(randomReplace, '..');
   const correctAnswer = randomReplace.toString();
-  return [question, correctAnswer];
+  return [gameQuestion, correctAnswer];
 };
 
-const runProgression = () => runGame(description, game);
+const runProgression = () => runGame(description, getTask);
 
 export default runProgression;

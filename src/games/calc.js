@@ -21,7 +21,7 @@ const calculate = (x, y, operator) => {
     case '*':
       return x * y;
     default:
-      return `Unknown operator: '${operator}'!`;
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
 };
 

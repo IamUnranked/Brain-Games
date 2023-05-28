@@ -1,5 +1,8 @@
 import runGame from '../index.js';
+// eslint-disable-next-line import/no-duplicates
 import getRandomNumber from '../utils.js';
+// eslint-disable-next-line import/no-duplicates
+import { getRandomIndex } from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -12,7 +15,7 @@ const getTask = () => {
   for (let i = 0; i < length; i += 1) {
     result.push(start + i * step);
   }
-  const randomReplace = result[getRandomNumber(1, result.length - 1)];
+  const randomReplace = result[getRandomIndex(result)];
   const gameQuestion = result.join(' ').replace(randomReplace, '..');
   const correctAnswer = randomReplace.toString();
   return [gameQuestion, correctAnswer];

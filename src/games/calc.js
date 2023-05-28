@@ -1,5 +1,11 @@
+/* eslint-disable import/no-unresolved */
 import runGame from '../index.js';
+
+// eslint-disable-next-line import/no-duplicates
 import getRandomNumber from '../utils.js';
+
+// eslint-disable-next-line import/no-named-as-default, import/no-duplicates
+import { getRandomIndex } from '../utils.js';
 
 const description = 'What is the result of the expression?';
 
@@ -15,14 +21,14 @@ const calculate = (x, y, operator) => {
     case '*':
       return x * y;
     default:
-      throw new Error(`Unknown operator: '${operator}'!`);
+      return `Unknown operator: '${operator}'!`;
   }
 };
 
 const getTask = () => {
   const number1 = getRandomNumber(1, 10);
   const number2 = getRandomNumber(1, 10);
-  const operator = operators[getRandomNumber(0, 2)];
+  const operator = operators[getRandomIndex(operators)];
   const gameQuestion = `${number1} ${operator} ${number2}`;
   const correctAnswer = calculate(number1, number2, operator).toString();
 

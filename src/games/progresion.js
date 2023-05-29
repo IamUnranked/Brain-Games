@@ -1,6 +1,6 @@
 import runGame from '../index.js';
 // eslint-disable-next-line import/no-duplicates
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 // eslint-disable-next-line import/no-duplicates
 import { getRandomIndex } from '../utils.js';
 

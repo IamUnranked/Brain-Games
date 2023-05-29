@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved */
 import runGame from '../index.js';
 
-// eslint-disable-next-line import/no-duplicates
-import getRandomNumber from '../utils.js';
+// eslint-disable-next-line import/no-duplicates, import/named
+import { getRandomNumber } from '../utils.js';
 
 // eslint-disable-next-line import/no-named-as-default, import/no-duplicates
 import { getRandomIndex } from '../utils.js';

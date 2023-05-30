@@ -18,8 +18,8 @@ const isPrime = (number) => {
 const getTask = () => {
   const number = getRandomNumber(1, 10);
   const question = number.toString();
-  const gameCorrectAnswer = isPrime(number) ? 'yes' : 'no';
-  return [question, gameCorrectAnswer];
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
 const runPrime = () => runGame(description, getTask);

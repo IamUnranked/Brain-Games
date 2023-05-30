@@ -19,9 +19,9 @@ const getTask = () => {
   const number1 = getRandomNumber(1, 10);
   const number2 = getRandomNumber(1, 10);
   const question = `${number1} ${number2}`;
-  const gameCorrectAnswer = gcd(number1, number2);
+  const correctAnswer = gcd(number1, number2);
 
-  return [question, gameCorrectAnswer.toString()];
+  return [question, correctAnswer.toString()];
 };
 
 const runGcd = () => runGame(description, getTask);

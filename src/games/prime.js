@@ -3,11 +3,11 @@ import { getRandomNumber } from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isPrime = (number) => {
-  const numberSqrt = Math.sqrt(number);
+  const numberLimit = Math.sqrt(number);
   if (number < 2) {
     return false;
   }
-  for (let i = 2; i <= numberSqrt; i += 1) {
+  for (let i = 2; i <= numberLimit; i += 1) {
     if (number % i === 0) {
       return false;
     }

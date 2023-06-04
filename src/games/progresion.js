@@ -18,7 +18,7 @@ const getTask = () => {
   const progression = getProgression(start, step, length);
 
   const hiddenNumber = getRandomIndex(progression);
-  const correctAnswer = (progression[hiddenNumber]).toString();
+  const correctAnswer = progression[hiddenNumber].toString();
   progression[hiddenNumber] = '..';
   const question = progression.join(' ');
   return [question, correctAnswer];
